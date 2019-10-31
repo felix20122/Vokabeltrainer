@@ -1,0 +1,7 @@
+Protokoll
+24.10.2019
+	Brainstorming
+	Festlegung des Forms Desgins
+	Erste Festlegegungen des Programmablaufes
+31.10.2019
+	Einlesen der Vokabeln über eine CSV Datei
