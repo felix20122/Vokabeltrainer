@@ -1,0 +1,11 @@
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe.config
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.exe
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\bin\Debug\VokabelTrainer.pdb
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\bin\Debug\MaterialSkin.dll
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csprojAssemblyReference.cache
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.Properties.Resources.resources
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.GenerateResource.cache
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.csproj.CopyComplete
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.exe
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.pdb
+C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\VokabelTrainer\obj\Debug\VokabelTrainer.Menu.resources
