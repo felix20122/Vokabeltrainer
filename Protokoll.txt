@@ -5,3 +5,15 @@ Protokoll
 	Erste Festlegegungen des Programmablaufes
 31.10.2019
 	Einlesen der Vokabeln über eine CSV Datei
+	Dark Modus & Ton Modus wurden hinzugefügt
+07.11.2019
+	Erstellung eines ersten Deignentwurf
+	Benennung und Einteilung der Tabselektoren
+	Bennenung der Elemente(Buttons, Labels, Checkboxen, Radiobuttons, usw.)
+14.11.2019
+	Vollständige Umsetzung des Designs in Forms
+	Einfügen von Bildern
+	Brainstorming über erweitertes Design und weitere Ideen
+21.11.2019
+	Erste Verbindungstests zwischen CSV Klasse und der Forms Klasse
+	Themenauswahl hinzugefügt
