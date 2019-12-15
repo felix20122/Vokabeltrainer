@@ -7,59 +7,73 @@ using System.IO;
 
 namespace VokabelTrainer
 {
-    class CSV_Reader
+    class csv_Import
     {
-        public void import(string Dateipfad)
+        string Dateipfad;
+        public string Error = "";
+        public List<Topic> import()
         {
-            //Der Import aus der CSV Datei in drei Listen wird gestartet
-            List<string> listA = new List<string>();
-            List<string> listB = new List<string>();
-            List<string> listC = new List<string>();
-            using (var reader = new StreamReader(Dateipfad))
+            //Der Import aus der CSV Datei in drei Listen wird gestartet            
+            List<Vok> list = new List<Vok>();
+
+            try
             {
-
-                while (!reader.EndOfStream)
+                using (var reader = new StreamReader(Dateipfad))
                 {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-
-                    listA.Add(values[0]);
-                    listB.Add(values[1]);
-                    listC.Add(values[2]);
+                    try
+                    {
+                        while (!reader.EndOfStream)
+                        {
+                            var line = reader.ReadLine();
+                            var values = line.Split(',');
+                            Vok vok = new Vok(values[0], values[1], values[2]);
+                            list.Add(vok);
+                        }
+                    }
+                    catch (System.IndexOutOfRangeException)
+                    {
+                        Error = Error + "Es gab Probleme mit dem Format der CSV Datei, überprüfe diese und probiere es noch einmal";
+                    }
                 }
             }
-            //Die Länge von der Liste A wird gespeichert, da bei einem Mehrdimensonalen Array alle Spalten gezählt werden und somit kein Zugriff bei einer For Schleife auf Array.Count gibt
-            int arrayLaenge = listA.Count;
-            //Der Array wird anhand der Länge von Liste A Instalisert und der Anzahl der Spalten
-            string[,] array = new string[arrayLaenge, 3];
-            //Die Listen werden in den Array eingelesen
-            for (int e = 0; e < arrayLaenge; e++)
+            catch
             {
-                array[e, 0] = listA[e];
-                array[e, 1] = listB[e];
-                array[e, 2] = listC[e];
+                Error = Error + "Es besteht ein Problem mit dem Dateipfad, welchen du angegeben hast";
             }
-            //Es wird ein Inhaltsverzeichnis erstellt, mit welchem sich die Vokabelen in Verschiedenen Themen sortieren lässt
-            List<int> Nomen = new List<int>();
-            List<int> Verben = new List<int>();
-            List<int> Sonstige = new List<int>();
 
-            for (int e = 1; e < arrayLaenge; e++)
+            //Hier fängt das Sortieren der Themen an
+            int topicsCount = 0;
+            List<Topic> topics = new List<Topic>(); // intsalierung von einem String Array in einer Liste in einer Liste. Der Gedanke dahinter ist, dass in der Liste die Verschiedenen Themen gespeichert werden und der Inhalt der Themen über einen Mehrdimensolaen Array angesprochen werden kann.
+            for (int i = 1; i < list.Count; i++)
             {
-                switch (array[e, 0])
+                if (!topics.Any(test => test.Name == list[i].topic)) // Aus List alle listen raussuchen und dann prüfen ob das erste Feld der Arrays übereinstimmt
                 {
-                    case "Nomen":
-                        Nomen.Add(e);
-                        break;
-                    case "Verben":
-                        Verben.Add(e);
-                        break;
-                    default:
-                        Sonstige.Add(e);
-                        break;
+                    Topic topic = new Topic(list[i].topic, topicsCount);
+                    topic.In.Add(list[i]);
+                    topics.Add(topic);
+                    topicsCount++;
+                }
+                else
+                {
+                    foreach (Topic topic in topics)
+                    {
+                        if (topic.Name == list[i].topic)
+                        {
+                            topic.In.Add(list[i]);
+                        }
+                    }
                 }
             }
-            //Zugriff über das Inhaltverzeichnis: array[Nomen[e],1] array[Nomen[e], 2]
+
+            return topics;
+        }
+
+
+
+
+        public csv_Import(string Dateipfad)
+        {
+            this.Dateipfad = Dateipfad;
         }
     }
 }
