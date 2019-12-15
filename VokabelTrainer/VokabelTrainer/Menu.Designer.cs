@@ -562,7 +562,7 @@
             this.btnStart.AutoSize = true;
             this.btnStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnStart.Depth = 0;
-            this.btnStart.Location = new System.Drawing.Point(47, 53);
+            this.btnStart.Location = new System.Drawing.Point(56, 53);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnStart.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnStart.Name = "btnStart";

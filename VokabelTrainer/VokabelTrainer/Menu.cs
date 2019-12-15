@@ -23,48 +23,51 @@ namespace VokabelTrainer
             InitializeComponent();
             InitializeSkin();
         }
-        public void InitializeSkin()
-        {
-            var skinManager = MaterialSkinManager.Instance;
-            SkinManager.AddFormToManage(this);
-            skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-        }
 
+        //Das sind die Next Buttons unten um die Tabs zu wechseln
         private void btnNext_Click(object sender, EventArgs e)
         {
             TabPage t = materialTabControl1.TabPages[1];
             materialTabControl1.SelectTab(t); //go to tab
         }
-
         private void btnNext1_Click(object sender, EventArgs e)
         {
             TabPage t = materialTabControl1.TabPages[2];
             materialTabControl1.SelectTab(t); //go to tab
         }
-
         private void btnBack1_Click(object sender, EventArgs e)
         {
             TabPage t = materialTabControl1.TabPages[0];
             materialTabControl1.SelectTab(t); //go to tab
         }
-
         private void btnBack2_Click(object sender, EventArgs e)
         {
             TabPage t = materialTabControl1.TabPages[1];
             materialTabControl1.SelectTab(t); //go to tab
         }
 
+        //Dark Theme
+        public void InitializeSkin()
+        {
+            var skinManager = MaterialSkinManager.Instance;
+            SkinManager.AddFormToManage(this);
+            skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+        }
         private void rbtnLight_Click(object sender, EventArgs e)
         {
             SkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
         }
-
         private void rbtnDark_Click(object sender, EventArgs e)
         {
             SkinManager.Theme = MaterialSkinManager.Themes.DARK;
         }
 
+        //Startet das Spiel
         private void btnStart_Click(object sender, EventArgs e)
+        {
+            starteSpiel();
+        }
+        private void btnNextGame_Click(object sender, EventArgs e)
         {
             starteSpiel();
         }
@@ -105,6 +108,7 @@ namespace VokabelTrainer
             }
         }
 
+        //Öffnen und Bearbeiten der CSV Dateien
         private void btnVokOpen_Click(object sender, EventArgs e)
         {
             var fileToOpen = txtPfadCSV.Text;
@@ -118,12 +122,12 @@ namespace VokabelTrainer
             process.Start();
             process.WaitForExit();
         }
-
         private void btnUserOpen_Click(object sender, EventArgs e)
         {
 
         }
 
+        //Erstellt die Themenauswahl für das Drop down Menu der Themen
         private void comboBoxThemen_MouseClick(object sender, MouseEventArgs e)
         {
             csv_Import csv = new csv_Import(txtPfadCSV.Text);
@@ -136,6 +140,7 @@ namespace VokabelTrainer
             comboBoxThemen.BackColor = Color.White;
         }
 
+        //Vergleicht die Vokabeln
         private void btnMatch_Click(object sender, EventArgs e)
         {
             if (currentVok.Fremdsprache.Equals(txtLang2.Text))
@@ -150,6 +155,8 @@ namespace VokabelTrainer
                 btnNextGame.Visible = true;
             }
         }
+
+        //Bilder für Daumen
         private void thumbs(PictureBox p, int index)
         {
             string pfadthumbsUp = @"C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\pictures\thumbsup.png";
@@ -169,16 +176,10 @@ namespace VokabelTrainer
             }
         }
 
+        //Um die richtige Antwort zu sehen
         private void btnCorrectAnswer_Click(object sender, EventArgs e)
         {
             txtLang2.Text = currentVok.Fremdsprache;
-        }
-
-        private void btnNextGame_Click(object sender, EventArgs e)
-        {
-            btnCorrectAnswer.Visible = false;
-            btnNextGame.Visible = false;
-            starteSpiel();
         }
     }
 }
