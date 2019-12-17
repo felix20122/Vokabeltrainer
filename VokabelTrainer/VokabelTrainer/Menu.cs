@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using MaterialSkin.Animations;
 using MaterialSkin.Controls;
 using MaterialSkin;
+using System.IO;
+using System.Media;
 
 namespace VokabelTrainer
 {
@@ -147,20 +149,30 @@ namespace VokabelTrainer
             {
                 thumbs(pictureBoxThumbs, 1);
                 btnNextGame.Visible = true;
+                if(rbtnSoundOn.Checked)playSound(true);
             }
             else
             {
                 thumbs(pictureBoxThumbs, 0);
                 btnCorrectAnswer.Visible = true;
                 btnNextGame.Visible = true;
+                if(rbtnSoundOn.Checked)playSound(false);
             }
+        }
+
+        //Relativer Programmpfad
+        string getBasePath()
+        {
+            DirectoryInfo di = new DirectoryInfo(Application.StartupPath);
+            return di.Parent.Parent.Parent.FullName;
         }
 
         //Bilder für Daumen
         private void thumbs(PictureBox p, int index)
         {
-            string pfadthumbsUp = @"C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\pictures\thumbsup.png";
-            string pfadthumbsDown = @"C:\Users\Felix\Documents\GitHub\Vokabeltrainer\VokabelTrainer\pictures\thumbsdown.png";
+            string pfadthumbsUp = getBasePath() + @"\pictures\thumbsup.png";
+            string pfadthumbsDown = getBasePath() + @"\pictures\thumbsdown.png";
+
             //pictureBoxThumbs.SizeMode = PictureBoxSizeMode.StretchImage;
             switch (index)
             {
@@ -174,6 +186,15 @@ namespace VokabelTrainer
                     p.Image = null;
                     break;
             }
+        }
+
+        //Sounds für Daumen
+        private void playSound(bool index)
+        {
+            SoundPlayer soundRight = new SoundPlayer(getBasePath() + @"\sounds\applause.wav");
+            SoundPlayer soundWrong = new SoundPlayer(getBasePath() + @"\sounds\ironic-applause.wav");
+            if (index) soundRight.Play();
+            else soundWrong.Play();
         }
 
         //Um die richtige Antwort zu sehen
