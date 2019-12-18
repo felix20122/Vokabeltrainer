@@ -1,4 +1,6 @@
 Thema,Deutsch,Englisch
+Allgemein,Baum,tree
+Allgemein,laufen,walk
 Allgemein,Ja,yes
 Allgemein,Nein,no
 Allgemein,Vielleicht,maybe
@@ -6,29 +8,29 @@ Allgemein,Bitte,please
 Allgemein,Danke,thank you
 Allgemein,Entschuldigung,sorry
 Allgemein,Alles klar,alright
-Begrüssung,Hallo,Hello
-Begrüssung,Guten Morgen,Good morning
-Begrüssung,Guten Tag,Good afternoon
-Begrüssung,Guten Abend,Good evening
-Begrüssung,Gute Nacht,Good night
-Begrüssung,Tschüss,Goodbye
-Begrüssung,Auf Wiedersehen,See you
-Begrüssung,Wie geht es Ihnen?,How are you?
-Begrüssung,gut,well / good
-Begrüssung,schlecht,bad
+Begrï¿½ssung,Hallo,Hello
+Begrï¿½ssung,Guten Morgen,Good morning
+Begrï¿½ssung,Guten Tag,Good afternoon
+Begrï¿½ssung,Guten Abend,Good evening
+Begrï¿½ssung,Gute Nacht,Good night
+Begrï¿½ssung,Tschï¿½ss,Goodbye
+Begrï¿½ssung,Auf Wiedersehen,See you
+Begrï¿½ssung,Wie geht es Ihnen?,How are you?
+Begrï¿½ssung,gut,well / good
+Begrï¿½ssung,schlecht,bad
 Wegbeschreibung,links,left
 Wegbeschreibung,rechts,right
 Wegbeschreibung,hier,here
 Wegbeschreibung,dort,there
-Wegbeschreibung,zurück,back
+Wegbeschreibung,zurï¿½ck,back
 Wegbeschreibung,hoch,up
 Wegbeschreibung,runter,down
 Wegbeschreibung,geradeaus,straight on
 Wegbeschreibung,Ort,place
-Wegbeschreibung,Wo ist…?,Where is ..?
+Wegbeschreibung,Wo istï¿½?,Where is ..?
 Wegbeschreibung,weit,far
-Wegbeschreibung,in der Nähe von,near
-Wegbeschreibung,gegenüber von,across from
+Wegbeschreibung,in der Nï¿½he von,near
+Wegbeschreibung,gegenï¿½ber von,across from
 Wegbeschreibung,vorbeigehen,go past
 Wegbeschreibung,zwischen,between
 Zeiten/Daten,jetzt,now
@@ -42,8 +44,8 @@ Zeiten/Daten,Tag,day
 Zeiten/Daten,Woche,week
 Zeiten/Daten,Monat,month
 Zeiten/Daten,Jahr,year
-Zeiten/Daten,früh,early
-Zeiten/Daten,spät,late
+Zeiten/Daten,frï¿½h,early
+Zeiten/Daten,spï¿½t,late
 Zeiten/Daten,Montag,Monday
 Zeiten/Daten,Dienstag,Tuesday
 Zeiten/Daten,Mittwoch,Wednesday
@@ -51,13 +53,13 @@ Zeiten/Daten,Donnerstag,Thursday
 Zeiten/Daten,Freitag,Friday
 Zeiten/Daten,Samstag,Saturday
 Zeiten/Daten,Sonntag,Sunday
-Zeiten/Daten,Frühling,spring
+Zeiten/Daten,Frï¿½hling,spring
 Zeiten/Daten,Sommer,summer
 Zeiten/Daten,Herbst,fall (amerik.) / autumn (brit.)
 Zeiten/Daten,Winter,winter
 Zeiten/Daten,Januar,January
 Zeiten/Daten,Februar,February
-Zeiten/Daten,März,March
+Zeiten/Daten,Mï¿½rz,March
 Zeiten/Daten,April,April
 Zeiten/Daten,Mai,May
 Zeiten/Daten,Juni,June
@@ -68,7 +70,7 @@ Zeiten/Daten,Oktober,October
 Zeiten/Daten,November,November
 Zeiten/Daten,Dezember,December
 Zeiten/Daten,Uhrzeit,time
-Zeiten/Daten,Wie spät ist es?,What time is it?
+Zeiten/Daten,Wie spï¿½t ist es?,What time is it?
 Zeiten/Daten,Jahrzehnt,decade
 Zeiten/Daten,Jahrhundert,century
 Einkaufen,teuer,expensive
@@ -78,7 +80,7 @@ Einkaufen,Wie viel kostet das?,How much is that?
 Einkaufen,Kassierer,cashier
 Einkaufen,Trolley / Warenkorb,trolley/shopping cart
 Einkaufen,Tasche,bag
-Restaurant ,Frühstück,breakfast
+Restaurant ,Frï¿½hstï¿½ck,breakfast
 Restaurant ,Mittagsessen,lunch
 Restaurant ,Abendessen,dinner
 Restaurant ,Besteck,cutlery
@@ -88,31 +90,31 @@ Restaurant ,Hauptgang,main course
 Restaurant ,Dessert,dessert
 Restaurant ,Trinkgeld,tip
 Restaurant ,Beilage,side dish
-Restaurant ,Getränke,beverages
+Restaurant ,Getrï¿½nke,beverages
 Zahlen,Eins,one
 Zahlen,Zwei,two
 Zahlen,Drei,three
 Zahlen,Vier,four
-Zahlen,Fünf,five
+Zahlen,Fï¿½nf,five
 Zahlen,Sechs,six
 Zahlen,Sieben,seven
 Zahlen,Acht,eight
 Zahlen,Neun,nine
 Zahlen,Zehn,ten
 Zahlen,Elf,eleven
-Zahlen,Zwölf,twelve
+Zahlen,Zwï¿½lf,twelve
 Zahlen,Dreizehn,thirteen
 Zahlen,Vierzehn,fourteen
-Zahlen,Fünfzehn,fifteen
+Zahlen,Fï¿½nfzehn,fifteen
 Zahlen,Sechszehn,sixteen
 Zahlen,Sechszehn,sixteen
 Zahlen,Siebzehn,seventeen
 Zahlen,Achtzehn,eighteen
 Zahlen,Neunzehn,nineteen
 Zahlen,Zwanzig,twenty
-Zahlen,Dreißig,thirty
+Zahlen,Dreiï¿½ig,thirty
 Zahlen,Vierzig,fourty
-Zahlen,Fünfzig,fifty
+Zahlen,Fï¿½nfzig,fifty
 Zahlen,Sechszig,sixty
 Zahlen,Siebzieg,seventy
 Zahlen,Achzig,eighty
@@ -125,7 +127,7 @@ Zahlen,erste(r),first
 Zahlen,zweite(r),second
 Zahlen,dritte(r),third
 Zahlen,vierte(r),fourth
-Zahlen,fünfte(r),fifth
+Zahlen,fï¿½nfte(r),fifth
 Zahlen,sechste(r),sixth
 Zahlen,siebte(r),seventh
 Prsonalpronomen,ich,I
@@ -136,46 +138,45 @@ Prsonalpronomen,es,it
 Prsonalpronomen,wir,we
 Prsonalpronomen,ihr,you
 Prsonalpronomen,sie,they
-wichtige Wörter,Ding,thing
-wichtige Wörter,sicher,sure
-wichtige Wörter,der/die/das,the
-wichtige Wörter,und,and
-wichtige Wörter,oder,or
-wichtige Wörter,weil,because
-wichtige Wörter,Leben,life
-wichtige Wörter,Regierung,government
-wichtige Wörter,Kind,child
-wichtige Wörter,Firma,company
-wichtige Wörter,Gruppe,group
-wichtige Wörter,Alter,age
-wichtige Wörter,Mond,moon
-wichtige Wörter,Sonne,sun
-wichtige Wörter,Auto,car
-wichtige Wörter,Buch,book
-wichtige Wörter,Welt,world
-wichtige Wörter,Familie,family
-wichtige Wörter,Freund,friend
-wichtige Wörter,Gesetz,law
-wichtige Wörter,Baum,tree
-Mensch/Körper,Mann,man
-Mensch/Körper,Frau,woman
-Mensch/Körper,Junge,boy
-Mensch/Körper,Mädchen,girl
-Mensch/Körper,Arm,arm
-Mensch/Körper,Hand,hand
-Mensch/Körper,Bein,leg
-Mensch/Körper,Fuß,foot
-Mensch/Körper,Auge,eye
-Mensch/Körper,Kopf,head
-Mensch/Körper,Gehirn,brain
-Mensch/Körper,Nase,nose
-Mensch/Körper,Ohr,ear
-Mensch/Körper,Haar,hair
-Mensch/Körper,Augenbraue,eyebrow
-Mensch/Körper,Lippen,lips
-Mensch/Körper,Finger,finger
-Mensch/Körper,Skelett,skeleton
-Mensch/Körper,Knochen,bones
+wichtige Wï¿½rter,Ding,thing
+wichtige Wï¿½rter,sicher,sure
+wichtige Wï¿½rter,der/die/das,the
+wichtige Wï¿½rter,und,and
+wichtige Wï¿½rter,oder,or
+wichtige Wï¿½rter,weil,because
+wichtige Wï¿½rter,Leben,life
+wichtige Wï¿½rter,Regierung,government
+wichtige Wï¿½rter,Kind,child
+wichtige Wï¿½rter,Firma,company
+wichtige Wï¿½rter,Gruppe,group
+wichtige Wï¿½rter,Alter,age
+wichtige Wï¿½rter,Mond,moon
+wichtige Wï¿½rter,Sonne,sun
+wichtige Wï¿½rter,Auto,car
+wichtige Wï¿½rter,Buch,book
+wichtige Wï¿½rter,Welt,world
+wichtige Wï¿½rter,Familie,family
+wichtige Wï¿½rter,Freund,friend
+wichtige Wï¿½rter,Gesetz,law
+Mensch/Kï¿½rper,Mann,man
+Mensch/Kï¿½rper,Frau,woman
+Mensch/Kï¿½rper,Junge,boy
+Mensch/Kï¿½rper,Mï¿½dchen,girl
+Mensch/Kï¿½rper,Arm,arm
+Mensch/Kï¿½rper,Hand,hand
+Mensch/Kï¿½rper,Bein,leg
+Mensch/Kï¿½rper,Fuï¿½,foot
+Mensch/Kï¿½rper,Auge,eye
+Mensch/Kï¿½rper,Kopf,head
+Mensch/Kï¿½rper,Gehirn,brain
+Mensch/Kï¿½rper,Nase,nose
+Mensch/Kï¿½rper,Ohr,ear
+Mensch/Kï¿½rper,Haar,hair
+Mensch/Kï¿½rper,Augenbraue,eyebrow
+Mensch/Kï¿½rper,Lippen,lips
+Mensch/Kï¿½rper,Finger,finger
+Mensch/Kï¿½rper,Skelett,skeleton
+Mensch/Kï¿½rper,Knochen,bones
 Verben,sein,to be
 Verben,bekommen,to get
 Verben,geben,to give
@@ -194,19 +195,18 @@ Verben,wissen,to know
 Verben,sehen,to see
 Verben,wollen,to want
 Verben,finden,to find
-Verben,erzählen,to tell
+Verben,erzï¿½hlen,to tell
 Verben,fragen,to ask
 Verben,versuchen,to try
 Verben,anrufen,to call
-Verben,laufen,walk
-Adjektive,schön,beautiful
-Adjektive,hässlich,ugly
+Adjektive,schï¿½n,beautiful
+Adjektive,hï¿½sslich,ugly
 Adjektive,hoch,tall
 Adjektive,klein,small
-Adjektive,groß,big
+Adjektive,groï¿½,big
 Adjektive,neu,new
 Adjektive,lang,long
-Adjektive,großartig,great
+Adjektive,groï¿½artig,great
 Adjektive,alt,old
 Adjektive,jung,young
 Adjektive,anders,different

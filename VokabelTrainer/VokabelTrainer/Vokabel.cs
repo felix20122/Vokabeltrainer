@@ -11,7 +11,6 @@ namespace VokabelTrainer
         public string topic;
         public string Deutsch { get; set; }
         public string Fremdsprache { get; set; }
-        int ThemenID;
         public Vok (string topic, string Deutsch, string Fremdsprache)
         {
             this.topic = topic;

@@ -62,6 +62,12 @@ namespace VokabelTrainer
         private void rbtnDark_Click(object sender, EventArgs e)
         {
             SkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            UserReader iu = new UserReader();
+            List<User> list = iu.import(txtPfadUser.Text);
+            //txtPfadCSV.Text = list[0].richtig[0];
+            //list[0].richtig[0] = "wuhhh";
+            //new UserWriter(@"C:\Users\Felix\Documents\GitHub\Vokabeltrainer\UserListe2.csv", list);
+            new UserWriter(txtPfadUser.Text, list);
         }
 
         //Startet das Spiel
@@ -126,7 +132,16 @@ namespace VokabelTrainer
         }
         private void btnUserOpen_Click(object sender, EventArgs e)
         {
+            var fileToOpen = txtPfadUser.Text;
+            var process = new System.Diagnostics.Process();
+            process.StartInfo = new System.Diagnostics.ProcessStartInfo()
+            {
+                UseShellExecute = true,
+                FileName = fileToOpen
+            };
 
+            process.Start();
+            process.WaitForExit();
         }
 
         //Erstellt die Themenauswahl für das Drop down Menu der Themen
@@ -160,7 +175,7 @@ namespace VokabelTrainer
             }
         }
 
-        //Relativer Programmpfad
+        //Relativer Programmpfad für Resourcen
         string getBasePath()
         {
             DirectoryInfo di = new DirectoryInfo(Application.StartupPath);
@@ -201,6 +216,12 @@ namespace VokabelTrainer
         private void btnCorrectAnswer_Click(object sender, EventArgs e)
         {
             txtLang2.Text = currentVok.Fremdsprache;
+        }
+
+        //Speichert Userdaten
+        private void btnSafeUserData_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
