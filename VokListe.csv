@@ -13,7 +13,7 @@ Begrüssung,Guten Morgen,Good morning
 Begrüssung,Guten Tag,Good afternoon
 Begrüssung,Guten Abend,Good evening
 Begrüssung,Gute Nacht,Good night
-Begrüssung,Tsch�ss,Goodbye
+Begrüssung,Tschüss,Goodbye
 Begrüssung,Auf Wiedersehen,See you
 Begrüssung,Wie geht es Ihnen?,How are you?
 Begrüssung,gut,well / good
@@ -22,15 +22,15 @@ Wegbeschreibung,links,left
 Wegbeschreibung,rechts,right
 Wegbeschreibung,hier,here
 Wegbeschreibung,dort,there
-Wegbeschreibung,zur�ck,back
+Wegbeschreibung,zurück,back
 Wegbeschreibung,hoch,up
 Wegbeschreibung,runter,down
 Wegbeschreibung,geradeaus,straight on
 Wegbeschreibung,Ort,place
-Wegbeschreibung,Wo ist�?,Where is ..?
+Wegbeschreibung,Wo ist?,Where is ..?
 Wegbeschreibung,weit,far
-Wegbeschreibung,in der N�he von,near
-Wegbeschreibung,gegen�ber von,across from
+Wegbeschreibung,in der Nähe von,near
+Wegbeschreibung,gegenüber von,across from
 Wegbeschreibung,vorbeigehen,go past
 Wegbeschreibung,zwischen,between
 Zeiten/Daten,jetzt,now
@@ -44,8 +44,8 @@ Zeiten/Daten,Tag,day
 Zeiten/Daten,Woche,week
 Zeiten/Daten,Monat,month
 Zeiten/Daten,Jahr,year
-Zeiten/Daten,fr�h,early
-Zeiten/Daten,sp�t,late
+Zeiten/Daten,früh,early
+Zeiten/Daten,spät,late
 Zeiten/Daten,Montag,Monday
 Zeiten/Daten,Dienstag,Tuesday
 Zeiten/Daten,Mittwoch,Wednesday
@@ -53,13 +53,13 @@ Zeiten/Daten,Donnerstag,Thursday
 Zeiten/Daten,Freitag,Friday
 Zeiten/Daten,Samstag,Saturday
 Zeiten/Daten,Sonntag,Sunday
-Zeiten/Daten,Fr�hling,spring
+Zeiten/Daten,Frühling,spring
 Zeiten/Daten,Sommer,summer
 Zeiten/Daten,Herbst,fall (amerik.) / autumn (brit.)
 Zeiten/Daten,Winter,winter
 Zeiten/Daten,Januar,January
 Zeiten/Daten,Februar,February
-Zeiten/Daten,M�rz,March
+Zeiten/Daten,März,March
 Zeiten/Daten,April,April
 Zeiten/Daten,Mai,May
 Zeiten/Daten,Juni,June
@@ -70,7 +70,7 @@ Zeiten/Daten,Oktober,October
 Zeiten/Daten,November,November
 Zeiten/Daten,Dezember,December
 Zeiten/Daten,Uhrzeit,time
-Zeiten/Daten,Wie sp�t ist es?,What time is it?
+Zeiten/Daten,Wie spät ist es?,What time is it?
 Zeiten/Daten,Jahrzehnt,decade
 Zeiten/Daten,Jahrhundert,century
 Einkaufen,teuer,expensive
@@ -80,7 +80,7 @@ Einkaufen,Wie viel kostet das?,How much is that?
 Einkaufen,Kassierer,cashier
 Einkaufen,Trolley / Warenkorb,trolley/shopping cart
 Einkaufen,Tasche,bag
-Restaurant ,Fr�hst�ck,breakfast
+Restaurant ,Frühstück,breakfast
 Restaurant ,Mittagsessen,lunch
 Restaurant ,Abendessen,dinner
 Restaurant ,Besteck,cutlery
@@ -90,31 +90,31 @@ Restaurant ,Hauptgang,main course
 Restaurant ,Dessert,dessert
 Restaurant ,Trinkgeld,tip
 Restaurant ,Beilage,side dish
-Restaurant ,Getr�nke,beverages
+Restaurant ,Getränke,beverages
 Zahlen,Eins,one
 Zahlen,Zwei,two
 Zahlen,Drei,three
 Zahlen,Vier,four
-Zahlen,F�nf,five
+Zahlen,Fünf,five
 Zahlen,Sechs,six
 Zahlen,Sieben,seven
 Zahlen,Acht,eight
 Zahlen,Neun,nine
 Zahlen,Zehn,ten
 Zahlen,Elf,eleven
-Zahlen,Zw�lf,twelve
+Zahlen,Zwölf,twelve
 Zahlen,Dreizehn,thirteen
 Zahlen,Vierzehn,fourteen
-Zahlen,F�nfzehn,fifteen
+Zahlen,Fünfzehn,fifteen
 Zahlen,Sechszehn,sixteen
 Zahlen,Sechszehn,sixteen
 Zahlen,Siebzehn,seventeen
 Zahlen,Achtzehn,eighteen
 Zahlen,Neunzehn,nineteen
 Zahlen,Zwanzig,twenty
-Zahlen,Drei�ig,thirty
+Zahlen,Dreißig,thirty
 Zahlen,Vierzig,fourty
-Zahlen,F�nfzig,fifty
+Zahlen,Fünfzig,fifty
 Zahlen,Sechszig,sixty
 Zahlen,Siebzieg,seventy
 Zahlen,Achzig,eighty
@@ -127,7 +127,7 @@ Zahlen,erste(r),first
 Zahlen,zweite(r),second
 Zahlen,dritte(r),third
 Zahlen,vierte(r),fourth
-Zahlen,f�nfte(r),fifth
+Zahlen,fünfte(r),fifth
 Zahlen,sechste(r),sixth
 Zahlen,siebte(r),seventh
 Prsonalpronomen,ich,I
@@ -138,45 +138,45 @@ Prsonalpronomen,es,it
 Prsonalpronomen,wir,we
 Prsonalpronomen,ihr,you
 Prsonalpronomen,sie,they
-wichtige W�rter,Ding,thing
-wichtige W�rter,sicher,sure
-wichtige W�rter,der/die/das,the
-wichtige W�rter,und,and
-wichtige W�rter,oder,or
-wichtige W�rter,weil,because
-wichtige W�rter,Leben,life
-wichtige W�rter,Regierung,government
-wichtige W�rter,Kind,child
-wichtige W�rter,Firma,company
-wichtige W�rter,Gruppe,group
-wichtige W�rter,Alter,age
-wichtige W�rter,Mond,moon
-wichtige W�rter,Sonne,sun
-wichtige W�rter,Auto,car
-wichtige W�rter,Buch,book
-wichtige W�rter,Welt,world
-wichtige W�rter,Familie,family
-wichtige W�rter,Freund,friend
-wichtige W�rter,Gesetz,law
-Mensch/K�rper,Mann,man
-Mensch/K�rper,Frau,woman
-Mensch/K�rper,Junge,boy
-Mensch/K�rper,M�dchen,girl
-Mensch/K�rper,Arm,arm
-Mensch/K�rper,Hand,hand
-Mensch/K�rper,Bein,leg
-Mensch/K�rper,Fu�,foot
-Mensch/K�rper,Auge,eye
-Mensch/K�rper,Kopf,head
-Mensch/K�rper,Gehirn,brain
-Mensch/K�rper,Nase,nose
-Mensch/K�rper,Ohr,ear
-Mensch/K�rper,Haar,hair
-Mensch/K�rper,Augenbraue,eyebrow
-Mensch/K�rper,Lippen,lips
-Mensch/K�rper,Finger,finger
-Mensch/K�rper,Skelett,skeleton
-Mensch/K�rper,Knochen,bones
+wichtige Wörter,Ding,thing
+wichtige Wörter,sicher,sure
+wichtige Wörter,der/die/das,the
+wichtige Wörter,und,and
+wichtige Wörter,oder,or
+wichtige Wörter,weil,because
+wichtige Wörter,Leben,life
+wichtige Wörter,Regierung,government
+wichtige Wörter,Kind,child
+wichtige Wörter,Firma,company
+wichtige Wörter,Gruppe,group
+wichtige Wörter,Alter,age
+wichtige Wörter,Mond,moon
+wichtige Wörter,Sonne,sun
+wichtige Wörter,Auto,car
+wichtige Wörter,Buch,book
+wichtige Wörter,Welt,world
+wichtige Wörter,Familie,family
+wichtige Wörter,Freund,friend
+wichtige Wörter,Gesetz,law
+Mensch/Körper,Mann,man
+Mensch/Körper,Frau,woman
+Mensch/Körper,Junge,boy
+Mensch/Körper,Mädchen,girl
+Mensch/Körper,Arm,arm
+Mensch/Körper,Hand,hand
+Mensch/Körper,Bein,leg
+Mensch/Körper,Fuß,foot
+Mensch/Körper,Auge,eye
+Mensch/Körper,Kopf,head
+Mensch/Körper,Gehirn,brain
+Mensch/Körper,Nase,nose
+Mensch/Körper,Ohr,ear
+Mensch/Körper,Haar,hair
+Mensch/Körper,Augenbraue,eyebrow
+Mensch/Körper,Lippen,lips
+Mensch/Körper,Finger,finger
+Mensch/Körper,Skelett,skeleton
+Mensch/Körper,Knochen,bones
 Verben,sein,to be
 Verben,bekommen,to get
 Verben,geben,to give
@@ -195,18 +195,18 @@ Verben,wissen,to know
 Verben,sehen,to see
 Verben,wollen,to want
 Verben,finden,to find
-Verben,erz�hlen,to tell
+Verben,erzählen,to tell
 Verben,fragen,to ask
 Verben,versuchen,to try
 Verben,anrufen,to call
-Adjektive,sch�n,beautiful
-Adjektive,h�sslich,ugly
+Adjektive,schön,beautiful
+Adjektive,hässlich,ugly
 Adjektive,hoch,tall
 Adjektive,klein,small
-Adjektive,gro�,big
+Adjektive,groß,big
 Adjektive,neu,new
 Adjektive,lang,long
-Adjektive,gro�artig,great
+Adjektive,großartig,great
 Adjektive,alt,old
 Adjektive,jung,young
 Adjektive,anders,different
