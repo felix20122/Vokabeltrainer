@@ -1,4 +1,4 @@
-Protokoll
+﻿Protokoll
 24.10.2019
 	Brainstorming
 	Festlegung des Forms Desgins
@@ -17,3 +17,20 @@ Protokoll
 21.11.2019
 	Erste Verbindungstests zwischen CSV Klasse und der Forms Klasse
 	Themenauswahl hinzugefügt
+28.11.19
+	Menu wurde weier ausgebaut
+	Probleme mit dem Einlesen der Vokabeln
+05.11.19
+	Hinzufügen von Sounds im Ton Modus
+	Generelles Bugfixen
+12.11.19
+	Klassendiagramm erstellt
+	Seperarierung und Unterteilung der Klassen
+17-19.11.19
+	Userdatei wurde implementiert
+	Import und Export einer User CSV Datei wurden erstellt
+	Bilder wurden über einen relativen Programmpfad hinzugefügt
+	Die Userklasse wurde hinzugefügt
+	Unitytests zur Fehlerdiagnose bei einigen Problemen >8h
+	Weitere bugs bestehen
+	

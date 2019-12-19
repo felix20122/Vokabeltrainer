@@ -342,6 +342,7 @@
             this.comboBoxUser.Name = "comboBoxUser";
             this.comboBoxUser.Size = new System.Drawing.Size(141, 21);
             this.comboBoxUser.TabIndex = 7;
+            this.comboBoxUser.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBoxUser_MouseClick);
             // 
             // lblUserAbfrage
             // 
@@ -538,7 +539,6 @@
             this.btnMatch.TabIndex = 4;
             this.btnMatch.Text = "Vergleichen";
             this.btnMatch.UseVisualStyleBackColor = true;
-            this.btnMatch.Visible = false;
             this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
             // btnBack2

@@ -26,15 +26,8 @@ namespace VokabelTrainer
                         {
                             var line = reader.ReadLine();
                             var values = line.Split(',');
-                            List<String> richtig = new List<String>();
-                            var tempArr = values[2].Split('-');
-                            for(int i = 0; i < tempArr.Length; i++)
-                            {
-                                richtig.Add(tempArr[i]);
-                            }
-                            User user = new User(Int32.Parse(values[0]), values[1], richtig);
 
-                            list.Add(user);
+                            list.Add(new User(Int32.Parse(values[0]), values[1], new List<String>(values[2].Split('-'))));
                         }
                     }
                     catch (System.IndexOutOfRangeException)

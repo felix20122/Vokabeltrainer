@@ -1,4 +1,4 @@
-UserID;Name;Richtige Vokabeln; Erfahrungspunkte;
-0;;yes:2-no:1-;
-0;;no:3-;
-0;;yes:10-;
+UserID,Name,Richtige Vokabeln, Erfahrungspunkte
+1,Carlo,,
+2,Martin,,
+4,Ninja,,

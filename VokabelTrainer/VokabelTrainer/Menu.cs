@@ -62,12 +62,6 @@ namespace VokabelTrainer
         private void rbtnDark_Click(object sender, EventArgs e)
         {
             SkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            UserReader iu = new UserReader();
-            List<User> list = iu.import(txtPfadUser.Text);
-            //txtPfadCSV.Text = list[0].richtig[0];
-            //list[0].richtig[0] = "wuhhh";
-            //new UserWriter(@"C:\Users\Felix\Documents\GitHub\Vokabeltrainer\UserListe2.csv", list);
-            new UserWriter(txtPfadUser.Text, list);
         }
 
         //Startet das Spiel
@@ -88,26 +82,36 @@ namespace VokabelTrainer
             //Wenn ein Thema ausgewält ist, gehts los
             if (comboBoxThemen.SelectedIndex != -1)
             {
-                //Falls das Richtige Thema gefunden wurde, wird die Randomfunktion ausgeführt
-                foreach (Topic top in list)
+                if(comboBoxUser.SelectedIndex != -1)
                 {
-                    if (top.ThemenID == comboBoxThemen.SelectedIndex)
+                    //Falls das Richtige Thema und der richtige User ausgewählt wurde, wird die Randomfunktion ausgeführt
+                    foreach (Topic top in list)
                     {
-                        Vok rndVok = top.Zufall();
-                        currentVok = rndVok;
-                        txtLang1.Text = currentVok.Deutsch;
+                        if (top.ThemenID == comboBoxThemen.SelectedIndex)
+                        {
+                            Vok rndVok = top.Zufall();
+                            currentVok = rndVok;
+                            txtLang1.Text = currentVok.Deutsch;
+                        }
                     }
+
+                    //Reset der Form
+                    btnNextGame.Visible = false;
+                    btnCorrectAnswer.Visible = false;
+
+                    thumbs(pictureBoxThumbs, -1);
+
+                    txtLang2.Text = null;
                 }
-
-                //Reset der Form
-                btnNextGame.Visible = true;
-                btnMatch.Visible = true;
-
-                thumbs(pictureBoxThumbs, -1);
-
-                txtLang2.Text = null;
-
+                //Roter Rand
+                else
+                {
+                    TabPage t = materialTabControl1.TabPages[1];
+                    materialTabControl1.SelectTab(t); //go to tab
+                    comboBoxUser.BackColor = Color.Red;
+                }         
             }
+            //Roter Rand
             else
             {
                 TabPage t = materialTabControl1.TabPages[1];
@@ -157,6 +161,19 @@ namespace VokabelTrainer
             comboBoxThemen.BackColor = Color.White;
         }
 
+        //Erstellt die Userauswahl für das Drop down Menu der User
+        private void comboBoxUser_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserReader iu = new UserReader();
+            List<User> list = iu.import(txtPfadUser.Text);
+            comboBoxUser.Items.Clear();
+            foreach (User user in list)
+            {
+                comboBoxUser.Items.Add(user.Name);
+            }
+            comboBoxUser.BackColor = Color.White;
+        }
+
         //Vergleicht die Vokabeln
         private void btnMatch_Click(object sender, EventArgs e)
         {
@@ -165,6 +182,19 @@ namespace VokabelTrainer
                 thumbs(pictureBoxThumbs, 1);
                 btnNextGame.Visible = true;
                 if(rbtnSoundOn.Checked)playSound(true);
+
+                //Userdatei wird angepasst
+                UserReader ur = new UserReader();
+                List<User> list = ur.import(txtPfadUser.Text);
+                foreach (User user in list)
+                {
+                    if (user.Name == comboBoxUser.SelectedItem.ToString())
+                    {
+                        user.istRichtig(currentVok.Deutsch, true);
+                    }
+                }
+                var uw = new UserWriter(txtPfadUser.Text);
+                uw.export(list);
             }
             else
             {
@@ -172,6 +202,19 @@ namespace VokabelTrainer
                 btnCorrectAnswer.Visible = true;
                 btnNextGame.Visible = true;
                 if(rbtnSoundOn.Checked)playSound(false);
+
+                //Userdatei wird angepasst
+                UserReader iu = new UserReader();
+                List<User> list = iu.import(txtPfadUser.Text);
+                foreach(User user in list)
+                {
+                    if (user.Name == comboBoxUser.SelectedItem.ToString())
+                    {
+                        user.istRichtig(currentVok.Deutsch, false);
+                    }
+                }
+                var uw = new UserWriter(txtPfadUser.Text);
+                uw.export(list);
             }
         }
 

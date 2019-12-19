@@ -18,30 +18,49 @@ namespace VokabelTrainer
         //Konstruktor
         public User(int ID, String name, List<String> richtig)
         {
-            ID = this.ID;
-            name = this.Name;
+            this.ID = ID;
+            this.Name = name;
             this.richtig = richtig;
         }
         //Methoden
-        public void add(string englisch)
+        public void istRichtig(string deutsch, bool correct)
         {
-            if (check(englisch))
+            //Ist die Variable schonmal gemacht worden?
+            if (check(deutsch))
             {
-                for (int i = 0; i < richtig.Count; i++)
-                    if (richtig[i].Split(':')[0].Equals(englisch))
-                        richtig[i] = richtig[i].Split(':')[0] + richtig[i].Split(':')[1] + 1;
+                //Richtige Antwort
+                if (correct)
+                {
+                    for (int i = 0; i < richtig.Count; i++)
+                    {
+                        if (richtig[i].Split(':')[0].Equals(deutsch))
+                        {
+                            richtig[i] = richtig[i].Split(':')[0] + ":" + richtig[i].Split(':')[1];//+1
+                        }
+                    }
+                        
+                }
+                //Falsche Antwort
+                else
+                {
+                    for (int i = 0; i < richtig.Count; i++)
+                        if (richtig[i].Split(':')[0].Equals(deutsch))
+                            richtig[i] = richtig[i].Split(':')[0] + ":" + richtig[i].Split(':')[1];//-1
+                }
+                
             }
             else
             {
-                richtig.Add(englisch + ":"+1);
+                if(correct) richtig.Add(deutsch + ":" + 1);
+                else richtig.Add(deutsch + ":" + -1);
+
             }
         }
-        bool check(string englisch)
+        bool check(string deutsch)
         {
             foreach(String i in richtig)
-                if (i.Split(':')[0].Equals(englisch)) return true;
+                if (i.Split(':')[0].Equals(deutsch)) return true;
             return false;
         }
-
     }
 }
